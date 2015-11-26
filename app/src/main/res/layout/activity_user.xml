@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image">
+
+    <include android:id="@+id/one" layout="@layout/include_user_header" />
+
+    <TextView
+        android:id="@+id/info_userName"
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:background="@color/purple"
+        android:text="@string/stuName"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20.0dip"
+        />
+
+    <TextView
+        android:id="@+id/info_userId"
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:background="@color/red"
+        android:text="@string/stuId"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30.0dip"
+        />
+
+    <TextView
+        android:id="@+id/info_class"
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:background="@color/lightblue"
+        android:text="@string/stuClass"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30.0dip"
+        />
+
+    <TextView
+        android:id="@+id/info_comment"
+        android:layout_width="300dip"
+        android:layout_height="50dip"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:background="@color/green"
+        android:text="@string/stuComment"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="30.0dip"
+        />
+
+    <ImageView
+        android:id="@+id/info_cartoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:src="@drawable/jidianxia"
+        android:layout_marginTop="20.0dip"
+        />
+
+</LinearLayout>

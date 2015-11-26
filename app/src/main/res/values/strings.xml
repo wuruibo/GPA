@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="app_name">绩点宝</string>
+
+    <string name="ac_main_title">绩点宝</string>
+    <string name="ac_result_title">查询结果</string>
+    <string name="ac_user_title">个人信息</string>
+    <string name="ac_about_title">关于绩点宝</string>
+
+    <string name="calculate">一键查询</string>
+    <string name="edit_id">输入原创学号</string>
+    <string name="edit_password">输入原创密码</string>
+    <string name="gpa_info">什么是绩点宝</string>
+    <string name="about">神器介绍</string>
+
+    <string name="course">课程名称</string>
+    <string name="credit">学分</string>
+    <string name="score">成绩</string>
+
+    <string name="stuName">周星驰</string>
+    <string name="stuId">2012xxxxxxxx</string>
+    <string name="stuClass">软件工程</string>
+    <string name="stuComment">您在2014/2015(1)学年中平均绩点为4.5，可称为“绩点侠”！</string>
+</resources>

@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>绩点宝</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <style type="text/css">
+
+        /* RESET
+        =============================================================================*/
+
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        }
+
+        /* BODY
+        =============================================================================*/
+
+        body {
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #fff;
+        padding: 20px;
+        max-width: 960px;
+        margin: 0 auto;
+        }
+
+        body > *:first-child {
+        margin-top: 0 !important;
+        }
+
+        body > *:last-child {
+        margin-bottom: 0 !important;
+        }
+
+        /* BLOCKS
+        =============================================================================*/
+
+        p, blockquote, ul, ol, dl, table, pre {
+        margin: 15px 0;
+        }
+
+        /* HEADERS
+        =============================================================================*/
+
+        h1, h2, h3, h4, h5, h6 {
+        margin: 20px 0 10px;
+        padding: 0;
+        font-weight: bold;
+        -webkit-font-smoothing: antialiased;
+        }
+
+        h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+        font-size: inherit;
+        }
+
+        h1 {
+        font-size: 28px;
+        color: #000;
+        }
+
+        h2 {
+        font-size: 24px;
+        border-bottom: 1px solid #ccc;
+        color: #000;
+        }
+
+        h3 {
+        font-size: 18px;
+        }
+
+        h4 {
+        font-size: 16px;
+        }
+
+        h5 {
+        font-size: 14px;
+        }
+
+        h6 {
+        color: #777;
+        font-size: 14px;
+        }
+
+        body > h2:first-child, body > h1:first-child, body > h1:first-child + h2, body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+        margin-top: 0;
+        padding-top: 0;
+        }
+
+        a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+        margin-top: 0;
+        padding-top: 0;
+        }
+
+        h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p {
+        margin-top: 10px;
+        }
+
+        /* LINKS
+        =============================================================================*/
+
+        a {
+        color: #4183C4;
+        text-decoration: none;
+        }
+
+        a:hover {
+        text-decoration: underline;
+        }
+
+        /* LISTS
+        =============================================================================*/
+
+        ul, ol {
+        padding-left: 30px;
+        }
+
+        ul li > :first-child,
+        ol li > :first-child,
+        ul li ul:first-of-type,
+        ol li ol:first-of-type,
+        ul li ol:first-of-type,
+        ol li ul:first-of-type {
+        margin-top: 0px;
+        }
+
+        ul ul, ul ol, ol ol, ol ul {
+        margin-bottom: 0;
+        }
+
+        dl {
+        padding: 0;
+        }
+
+        dl dt {
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0;
+        margin: 15px 0 5px;
+        }
+
+        dl dt:first-child {
+        padding: 0;
+        }
+
+        dl dt > :first-child {
+        margin-top: 0px;
+        }
+
+        dl dt > :last-child {
+        margin-bottom: 0px;
+        }
+
+        dl dd {
+        margin: 0 0 15px;
+        padding: 0 15px;
+        }
+
+        dl dd > :first-child {
+        margin-top: 0px;
+        }
+
+        dl dd > :last-child {
+        margin-bottom: 0px;
+        }
+
+        /* CODE
+        =============================================================================*/
+
+        pre, code, tt {
+        font-size: 12px;
+        font-family: Consolas, "Liberation Mono", Courier, monospace;
+        }
+
+        code, tt {
+        margin: 0 0px;
+        padding: 0px 0px;
+        white-space: nowrap;
+        border: 1px solid #eaeaea;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+        }
+
+        pre > code {
+        margin: 0;
+        padding: 0;
+        white-space: pre;
+        border: none;
+        background: transparent;
+        }
+
+        pre {
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        font-size: 13px;
+        line-height: 19px;
+        overflow: auto;
+        padding: 6px 10px;
+        border-radius: 3px;
+        }
+
+        pre code, pre tt {
+        background-color: transparent;
+        border: none;
+        }
+
+        /* QUOTES
+        =============================================================================*/
+
+        blockquote {
+        border-left: 4px solid #DDD;
+        padding: 0 15px;
+        color: #777;
+        }
+
+        blockquote > :first-child {
+        margin-top: 0px;
+        }
+
+        blockquote > :last-child {
+        margin-bottom: 0px;
+        }
+
+        /* HORIZONTAL RULES
+        =============================================================================*/
+
+        hr {
+        clear: both;
+        margin: 15px 0;
+        height: 0px;
+        overflow: hidden;
+        border: none;
+        background: transparent;
+        border-bottom: 4px solid #ddd;
+        padding: 0;
+        }
+
+        /* TABLES
+        =============================================================================*/
+
+        table th {
+        font-weight: bold;
+        }
+
+        table th, table td {
+        border: 1px solid #ccc;
+        padding: 6px 13px;
+        }
+
+        table tr {
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+        }
+
+        table tr:nth-child(2n) {
+        background-color: #f8f8f8;
+        }
+
+        /* IMAGES
+        =============================================================================*/
+
+        img {
+        max-width: 100%
+        }
+    </style>
+    <script type="application/javascript">
+    function insertVersion(versionName){
+        var version = document.getElementById("version");
+        version.innerHTML = version.innerHTML+versionName;
+    }
+</script>
+</head>
+<body>
+
+<h4>应用简介</h4>
+<p>绩点宝是一款专为浙江工业大学学生提供成绩查询和绩点计算的助学神器。随时随地查询大学各学年、各学期期末成绩和绩点。开心看成绩，轻松算绩点，是评奖评优、出国考研的校园必备助手。</p>
+
+<h4>功能描述</h4>
+<div>
+    <ol>
+        <li>查询成绩，一目了然。</li>
+        <li>计算绩点，准确无误。</li>
+        <li>不需绑定，快捷方便。</li>
+        <li>安全绿色，信赖可靠。</li>
+    </ol>
+</div>
+
+<h4>常见问题</h4>
+<div>
+    <ol>
+        <li>问：点击「一键查询」后，进度条有停顿，甚至会闪退，这是什么原因？</li>
+        <p>答：请检测当前手机网络信号，网络不稳定时会出现这种情况。建议在wifi下使用或多尝试几次。一般情况下，不会出现这种状况。</p>
+        <li>问：计算出来的绩点就是本学年或本学期的实际绩点吗？</li>
+        <p>答：「绩点宝」计算出来的绩点为本学年或本学期所有修过课程的总绩点。本学年或本学期的实际绩点各个学院都有自己的标准。一般情况下，「绩点宝」计算所得绩点不会有误差或只有极少量误差。</p>
+        <li>问：「绩点宝」是开源项目吗？</li>
+        <p>答：是开源项目。欢迎前往www.wuruibo.net查询相关源码。</p>
+    </ol>
+</div>
+
+<h4>开发人员</h4>
+<div>
+    <ol>
+        <li>仵瑞博</li>
+        <p>负责「绩点宝」整体编程设计，屏幕适配。Android开发工程师。个人博客：www.wuruibo.net</p>
+        <li>薛烽</li>
+        <p>负责「绩点宝」整体视觉效果，icon及banner制作者。嵌入式开发工程师，优秀UI设计者。</p>
+        <li>吴子旋</li>
+        <p>「绩点宝」技术监督。为「绩点宝」异常处理提供技术支持。系统开发工程师。个人博客：blog.wuzx.me</p>
+    </ol>
+</div>
+
+<h4>温馨提示</h4>
+<div>
+    <ol>
+        <li>本应用仅适用于Android4.0以上版本的手机，4.7英寸及以上尺寸屏幕效果最佳。</li>
+        <li>本应用完全免费，使用过程中产生的流量费用由当地运营商收取，与本应用无关。</li>
+        <li>建议在wifi环境下使用。</li>
+    </ol>
+</div>
+
+<h4>版本代号</h4>
+<div id="version">绩点宝 V</div>
+
+<h4>最后</h4>
+<p>特别感谢github上的Malop，这款应用参考了他的设计思路，并借鉴了部分代码，向他表示谢意。</p>
+
+</body>
+</html>

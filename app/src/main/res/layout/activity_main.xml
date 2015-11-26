@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_image"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="#ff16bc3e">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ac_main_title"
+            android:textSize="22.0sp"
+            android:textColor="#ffffffff"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_loginInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_below="@id/rl_tv_title"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_iv_banner"
+            android:layout_width="match_parent"
+            android:layout_height="180.0dp">
+
+            <ImageView
+                android:background="@mipmap/bg_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_iv_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_iv_banner"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:background="@drawable/line"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tv_userId"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dp"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:layout_below="@id/rl_iv_line">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:text="学        号"
+                android:textColor="@color/black"
+                android:textSize="18.0sp"/>
+
+            <EditText
+                android:id="@+id/userId"
+                android:layout_width="fill_parent"
+                android:layout_height="33dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100.0dip"
+                android:background="@drawable/shape"
+                android:hint="@string/edit_id"
+                android:singleLine="true"
+                android:textSize="18.0sp"
+                android:inputType="number"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="48.0dp"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:layout_below="@id/rl_tv_userId">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:text="密        码"
+                android:textColor="@color/black"
+                android:textSize="18.0sp"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="33dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100.0dip"
+                android:background="@drawable/shape"
+                android:hint="@string/edit_password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="18.0sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tv_year"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dp"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:layout_below="@id/rl_tv_password">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:text="年        份"
+                android:textColor="@color/black"
+                android:textSize="18.0sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_year"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100.0dip"
+                android:background="@drawable/shape"
+                android:singleLine="true"
+                android:textSize="18.0sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tv_term"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dp"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:layout_below="@id/rl_tv_year">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12.0dip"
+                android:text="学        期"
+                android:textColor="@color/black"
+                android:textSize="18.0sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_term"
+                android:layout_width="fill_parent"
+                android:layout_height="33dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="100.0dip"
+                android:background="@drawable/shape"
+                android:singleLine="true"
+                android:textSize="18.0sp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dp"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:layout_below="@id/rl_tv_term">
+
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="fill_parent"
+                android:layout_height="44.0dip"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_blue"
+                android:shadowDx="0.0"
+                android:shadowDy="-1.0"
+                android:shadowRadius="1.0"
+                android:text="@string/calculate"
+                android:textColor="@color/white"
+                android:textSize="18.0sp"
+                android:textStyle="normal"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_line_spilt"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_loginInfo"
+        android:layout_marginTop="10dip">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            android:layout_toLeftOf="@id/tv_GPAInfo"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@id/tv_GPAInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gpa_info"
+            android:layout_centerInParent="true" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line"
+            android:layout_toRightOf="@id/tv_GPAInfo"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_line_spilt">
+
+        <Button
+            android:id="@+id/about"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="16.0dip"
+            android:textSize="18.0sp"
+            android:paddingTop="7.0dip"
+            android:textColor="#ff707070"
+            android:background="@drawable/button_gray"
+            android:layout_width="180.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="16.0dip"
+            android:layout_marginRight="16.0dip"
+            android:layout_marginTop="15.0dip"
+            android:text="@string/about"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
